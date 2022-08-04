@@ -1,0 +1,24 @@
+@media screen and(max-width: 375px) {
+    body{
+        background-image: url('img/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+    } 
+}
+
+@media screen and(min-width: 376px) {
+    body{
+        background-image: url('img/pattern-background-desktop.svg');
+        background-repeat: repeat-x;
+        animation: animation_background 5s linear infinite;
+    }
+
+    @keyframes animation_background{
+        0%{
+            background-position-x: 0px;
+        }
+    
+        100%{
+            background-position-x: 1440px;
+        }
+    }
+}

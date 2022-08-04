@@ -1,0 +1,19 @@
+@mixin pinkfont {
+    color: pink;
+}
+
+@mixin white{
+    color: #FFF;
+}
+
+@mixin silver{
+    color: rgb(117, 117, 117);
+}
+
+@mixin display-flex{
+    display: flex;
+}
+
+@mixin text-middle {
+    text-align: center;
+}

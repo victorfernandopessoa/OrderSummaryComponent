@@ -1,0 +1,19 @@
+.btn {
+  width: 100%;
+  border: none;
+  padding: 12px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  background: #3829e0;
+  -webkit-box-shadow: 0px 8px 10px #7280a7;
+          box-shadow: 0px 8px 10px #7280a7;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #FFF;
+}
+
+.btn:hover {
+  background: rgba(56, 41, 224, 0.7);
+}
+/*# sourceMappingURL=button.css.map */

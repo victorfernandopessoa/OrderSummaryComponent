@@ -1,0 +1,17 @@
+// variables
+
+// ### Primary
+$pale_blue        : hsl(225, 100%, 94%) !global;
+$bright_blue      : hsl(245, 75%, 52%) !global;
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: $pale_blue;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 25px;
+}

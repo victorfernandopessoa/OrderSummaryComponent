@@ -1,0 +1,25 @@
+@import "../abstracts/mixin.scss";
+
+//Color
+
+$Bright_blue:      hsl(245, 75%, 52%);
+$Bright_blue_alfa: hsla(245, 75%, 52%, 0.7);
+$Desaturated_blue: hsl(224, 23%, 55%);
+$Very_pale_blue:   hsl(225, 100%, 98%);
+
+.btn{
+    width: 100%;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    background: $Bright_blue;
+    box-shadow: 0px 8px 10px $Desaturated_blue;
+    cursor: pointer;
+    transition: 0.5s;
+    @include white;
+
+    &:hover{
+        background: $Bright_blue_alfa;
+    }
+}

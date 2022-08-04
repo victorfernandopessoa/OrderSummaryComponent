@@ -1,0 +1,141 @@
+@import "../abstracts/mixin.scss";
+
+// color
+$white:            #FFF;
+$Pale_blue:        hsl(225, 100%, 94%);
+$Brigh_blue:       hsl(245, 75%, 52%);
+$Very_pale_blue:   hsl(225, 100%, 98%);
+$Desaturated_blue: hsl(224, 23%, 55%);
+$Dark_blue:        hsl(223, 47%, 23%);
+
+@media only screen and(min-width: 0px) and (max-width: 360px){
+    .container{
+        width: 100%;
+    }
+
+    #annual-plan{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #description-annual{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and(min-width: 360px){
+    .container{
+        width: 100%;
+    }
+
+    #annual-plan{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and(min-width: 420px){
+    .container, main{
+        width: 420px;
+    }
+}
+
+.container {
+    padding: 15px 15px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main{
+    width: 100%;
+    background: $white;
+    border-radius: 20px;
+    box-shadow: 0 2rem 50px -2rem $Desaturated_blue;
+    overflow: hidden;
+
+    h1{
+        margin: 0px;
+        color: $Dark_blue;
+        @include text-middle;
+    }
+
+    img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        max-width: 100%;
+    }
+
+    section{
+        @include display-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 25px;
+        padding: 50px 27px;
+        overflow: hidden;
+
+        #description{
+            @include text-middle;
+            @include silver;
+        }
+
+        #annual-plan{
+            width: 100%;
+            @include display-flex;
+            padding: 18px 18px;
+            border-radius: 18px;
+            box-sizing: border-box;
+            background: $Very_pale_blue;
+
+            #description-annual{
+                @include display-flex;
+                align-items: center;
+                column-gap: 15px;
+            }
+
+            #description-annual-price{
+                font-weight: 900;
+                color: $Dark_blue;
+            }
+
+            #btn_change_plan{
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        #btn_cancel_order{
+            @include silver;
+            @include text-middle;
+            font-weight: 900;
+            text-decoration: none;
+            transition: 0.5s;
+
+            &:hover{
+                color: $Dark_blue;
+            }
+        }
+    }
+}
+
+footer {
+    #copyright-desc{
+        display: block;
+        margin-top: 15px;
+        color: $Dark_blue;
+        @include text-middle;
+    }
+}
+
+
+
+
